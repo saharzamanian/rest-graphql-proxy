@@ -16,13 +16,13 @@ npm ci
 # or use this command for npm installation
 npm install
 
-# 2) (optional) set endpoint if different
+# 2) set endpoint 
 cp .env.example .env
 
-# 3) start dev server (auto-reload)
+# 3) start server (auto-reload)
 npm run dev
 
-# or build + run
+# or build + run 
 npm run build && npm start
 ```
 
