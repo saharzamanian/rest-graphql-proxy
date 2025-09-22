@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json tsconfig.json ./
 RUN npm install
 COPY src ./src
-RUN npm run dev
+RUN npm run build
 
 # Runtime stage
 FROM node:20-alpine
