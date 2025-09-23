@@ -47,6 +47,13 @@ curl -s -H "x-api-key: <api-key>" http://localhost:3000/item
 curl -s -H "x-api-key: <api-key>" http://localhost:3000/item/1
 ```
 
+### Example bash query
+```bash
+curl 'https://<endpoint url>' \
+  -H 'x-api-key: <api-key>' \
+  --data-raw '{"query":"query GetItems {\n  getItems {\n    id\n    mandatoryString\n    optionalBoolean\n  }\n}","operationName":"GetItems"}'
+```
+
 If the `x-api-key` header is missing, the server responds with `401`.
 If an item is not found, it responds with `404`.
 
